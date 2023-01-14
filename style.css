@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@400;500&family=Roboto:wght@500&family=Work+Sans:wght@500;600;700;900&display=swap');
+
+
+/* Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #ebebeb;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    width: 887px;
+    margin: 0 auto;
+}
+
+hr {
+    background-color: #D1D1D1;
+    width: 91%;
+    margin: 0 auto;
+}
+
+
+
+/* Navbar */
+.nav-back {
+    background-color: #562EFF;
+    margin-bottom: 36px;
+}
+
+.nav-contents {
+    display: flex;
+    justify-content: space-between;
+    width: 875px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 40.42px;
+    height: 51px;
+}
+
+.logo h2 {
+    color: white;
+}
+
+.menu-profile {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.menu-profile ul {
+    display: flex;
+    font-size: 16px;
+    gap: 36px;
+    color: white;
+    list-style: none;
+}
+
+
+
+/* teachers */
+.teachers-elements h2 {
+    padding: 33px 0 0 33px;
+    color: #562EFF;
+}
+
+.all-teachers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    padding: 36px;
+}
+
+.teacher {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.teacher img {
+    width: 56px;
+    height: 56px;
+}
+
+.teacher p {
+    font-weight: 500;
+}
+
+
+/* Blogs */
+.blog-title {
+    margin-bottom: 31px;
+}
+
+.blog-elements {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.blog-elements img {
+    width: 177px;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 26px;
+    width: 92%;
+    margin: 0 auto;
+    padding-bottom: 33px;
+}
+
+.title {
+    align-items: center;
+}
+
+.title p:first-child {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.blog-author {
+    margin-top: 15px;
+    color: #9F9F9F;
+}
+
+.blog-author a {
+    text-decoration: none;
+    color: #562EFF;
+}
+
+
+
+/* Latest Course */
+.course-back {
+    margin-top: 21px;
+    margin-bottom: 30px;
+}
+
+.course-back h2 {
+    padding: 33px 0 33px 33px;
+    color: #562EFF;
+}
+
+.course-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 23px;
+    width: 92%;
+    margin: 0 auto;
+}
+
+.course {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    padding: 10px 0 10px 13px;
+    margin-bottom: 35px;
+}
+
+.course img {
+    width: 224px;
+}
+
+.course-name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.instructor {
+    color: #ED6B4F;
+    padding: 10px 0;
+}
+
+.stars i {
+    font-size: 12px;
+}
+
+.gold {
+    color: #FFC014;
+}
+
+.ash {
+    color: #AEAEAE;
+}
+
+.clock-back {
+    background: #FFE4E8;
+    border: 1px solid #ED6B4F;
+    border-radius: 14.6913px;
+}
+
+.clock {
+    font-family: 'Open Sans', sans-serif;
+    padding: 3px 6px;
+    color: #ED6B4F;
+}
+
+.rating-clock {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+/* Mobile Devices Responsive */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .nav-back {
+        display: none;
+    }
+    .all-teachers {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog-elements {
+        display: block;
+        margin: 0 0 30px 10px;
+    }
+    .blog-elements img {
+        width: 70%;
+    }
+    .course-back {
+        margin-top: 21px;
+    }
+    .course-box {
+        grid-template-columns: repeat(1, 1fr);
+        width: 92%;
+    }
+    .course img {
+        width: 95%;
+    }
+    .rating-clock {
+        justify-content: space-between;
+        width: 95%;
+        gap: 30px;
+    }
+}
+
+
+
+/* Tab Devices Responsive */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .nav-back {
+        display: none;
+    }
+    .all-teachers {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 50px;
+    }
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog-elements {
+        display: block;
+        margin: 0 0 30px 0px;
+    }
+    .blog-elements img {
+        width: 70%;
+    }
+    .course-back {
+        margin-top: 21px;
+    }
+    .course-box {
+        grid-template-columns: repeat(1, 1fr);
+        width: 92%;
+    }
+    .course img {
+        width: 98%;
+    }
+    .rating-clock {
+        justify-content: space-between;
+        width: 95%;
+        gap: 30px;
+    }
+}
