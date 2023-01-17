@@ -7,18 +7,15 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
-body {
-    background: #ebebeb;
+.main-body {
+    background: #dedede;
 }
-
-.container {
+.main-container {
     background-color: white;
     border-radius: 10px;
     width: 887px;
     margin: 0 auto;
 }
-
 hr {
     background-color: #D1D1D1;
     width: 91%;
@@ -30,17 +27,14 @@ hr {
 /* Navbar */
 .nav-back {
     background-color: #562EFF;
-    margin-bottom: 36px;
 }
-
 .nav-contents {
     display: flex;
     justify-content: space-between;
-    width: 875px;
+    width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
-
 .logo {
     display: flex;
     align-items: center;
@@ -73,6 +67,9 @@ hr {
 
 
 /* teachers */
+.teachers-back{
+    margin-top: 130px;
+}
 .teachers-elements h2 {
     padding: 33px 0 0 33px;
     color: #562EFF;
@@ -84,7 +81,6 @@ hr {
     grid-row-gap: 30px;
     padding: 36px;
 }
-
 .teacher {
     display: flex;
     align-items: center;
@@ -172,8 +168,8 @@ hr {
     margin-bottom: 35px;
 }
 
-.course img {
-    width: 224px;
+.course .course-img img {
+    width: 95%;
 }
 
 .course-name {
@@ -215,17 +211,29 @@ hr {
     align-items: center;
     gap: 30px;
 }
+footer{
+    background-color: #562EFF;
+    color: white;
+}
+.foot-text{
+    margin-top: 10px;
+    padding: 30px 0 5px;
+    text-align: center;
+}
 
 
 
 /* Mobile Devices Responsive */
 @media screen and (max-width: 576px) {
-    .container {
+    .navbar-toggler{
+        color: white;
+    }
+    .main-container {
         width: 95%;
         margin: 0 auto;
     }
-    .nav-back {
-        display: none;
+    .teachers-back{
+        margin-top: 130px;
     }
     .all-teachers {
         grid-template-columns: repeat(1, 1fr);
@@ -255,25 +263,33 @@ hr {
         width: 95%;
         gap: 30px;
     }
+    .foot-text{
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 
 
 /* Tab Devices Responsive */
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    .container {
+    .main-container {
         width: 95%;
         margin: 0 auto;
     }
-    .nav-back {
-        display: none;
+    .navbar-toggler{
+        background-color: #562EFF;
+        color: white;
+    }
+    .teachers-back{
+        margin-top: 130px;
     }
     .all-teachers {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 50px;
     }
     .blogs {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .blog-elements {
         display: block;
@@ -286,11 +302,11 @@ hr {
         margin-top: 21px;
     }
     .course-box {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         width: 92%;
     }
     .course img {
-        width: 98%;
+        width: 100%;
     }
     .rating-clock {
         justify-content: space-between;
