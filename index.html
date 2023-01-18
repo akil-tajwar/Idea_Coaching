@@ -15,7 +15,7 @@
 
 
     <!-- Navbar -->
-    <nav class="nav-back navbar navbar-expand-lg fixed-top">
+    <nav class="nav-back large-scr navbar navbar-expand-lg fixed-top">
         <div class="nav-contents">
             <div class="logo">
                 <img src="./images/icons/logo.png" alt="">
@@ -29,11 +29,11 @@
                         <li>Works</li>
                     </ul>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> -->
                 <img src="./images/icons/profile.png" alt="">
             </div>
         </div>
@@ -42,23 +42,44 @@
 
 
 
-    <!-- Navbar -->
-    <!-- <div class="nav-back">
-        <div class="nav-contents">
-            <div class="logo">
-                <img src="./images/icons/logo.png" alt="">
-                <h2>Idea</h2>
+    <div class="nav-alt">
+        <nav class="navbar nav-back fixed-top">
+            <div class="nav nav-contents">
+                <a class="navbar-brand" href="#">
+                    <div class="logo">
+                        <img src="./images/icons/logo.png" alt="">
+                        <h2>Idea</h2>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <div class="display-flex flex-directon-row prifile-img">
+                                <img src="./images/icons/profile.png" alt="">
+                                <li><a href="">Profile</a></li>
+                            </div>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Works</a></li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="menu-profile">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Works</li>
-                </ul>
-                <img src="./images/icons/profile.png" alt="">
-            </div>
-        </div>
-    </div> -->
+        </nav>
+    </div>
 
 
     <!-- teachers and Blogs -->
