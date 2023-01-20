@@ -98,10 +98,21 @@ li {
     align-items: center;
     justify-content: center;
 }
+.profile{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.profile i{
+    color: #562EFF;
+    font-size: 20px;
+    margin-top: 8px;
+}
 
-.menu-list i {
+.menu-list i, .options i{
     color: #562EFF;
     padding-right: 10px;
+    font-size: 17px;
 }
 
 .nav>button {
@@ -129,14 +140,16 @@ li {
     border-radius: 7px;
 }
 
-.profile {
+.profile, .options {
     background-color: white;
     width: 100%;
     border-radius: 10px;
     margin: 40px 0;
     padding: 10px;
 }
-
+.options li{
+    margin-bottom: 20px;
+}
 
 /* teachers */
 .teachers-back {
