@@ -7,23 +7,31 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+
 .main-body {
     background: #dedede;
 }
+
 .main-container {
     background-color: white;
     border-radius: 10px;
     width: 887px;
     margin: 0 auto;
 }
+
 hr {
     background-color: #D1D1D1;
     width: 91%;
     margin: 0 auto;
 }
-.nav-back a{
+
+.nav-back a {
     text-decoration: none;
     color: white;
+}
+
+li {
+    list-style: none;
 }
 
 
@@ -31,6 +39,7 @@ hr {
 .nav-back {
     background-color: #562EFF;
 }
+
 .nav-contents {
     display: flex;
     justify-content: space-between;
@@ -38,6 +47,7 @@ hr {
     margin: 0 auto;
     padding: 20px;
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -66,16 +76,73 @@ hr {
     color: white;
     list-style: none;
 }
-.nav-alt{
+
+
+
+/*navbar alternative */
+.nav-alt {
     display: none;
 }
 
+.menu-list {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-list li {
+    background-color: white;
+    height: 40px;
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-list i {
+    color: #562EFF;
+    padding-right: 10px;
+}
+
+.nav>button {
+    background-color: white;
+}
+
+.nav>button span {
+    color: #562EFF;
+}
+
+.logo img {
+    margin-left: 10px;
+}
+
+.offcanvas-body {
+    background-color: #AEAEAE;
+}
+
+.search-btn {
+    background-color: #562EFF;
+    color: white;
+    width: 120px;
+    border: none;
+    font-size: 15px;
+    border-radius: 7px;
+}
+
+.profile {
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    margin: 40px 0;
+    padding: 10px;
+}
 
 
 /* teachers */
-.teachers-back{
+.teachers-back {
     margin-top: 140px;
 }
+
 .teachers-elements h2 {
     padding: 33px 0 0 33px;
     color: #562EFF;
@@ -87,6 +154,7 @@ hr {
     grid-row-gap: 30px;
     padding: 36px;
 }
+
 .teacher {
     display: flex;
     align-items: center;
@@ -217,11 +285,13 @@ hr {
     align-items: center;
     gap: 30px;
 }
-footer{
+
+footer {
     background-color: #562EFF;
     color: white;
 }
-.foot-text{
+
+.foot-text {
     margin-top: 10px;
     padding: 30px 0 15px;
     text-align: center;
@@ -231,87 +301,70 @@ footer{
 
 /* Mobile Devices Responsive */
 @media screen and (max-width: 576px) {
-    .nav-alt{
+    .nav-alt {
         display: block;
     }
-    .nav>button{
-        background-color: white;
-    }
-    .nav>button span{
-        color: #562EFF;
-    }
-    .nav-back a{
+
+    .nav-back a {
         color: black;
     }
-    .logo img{
-        margin-left: 10px;
-    }
-    .offcanvas-body{
-        background-color: #AEAEAE;
-    }
-    .search-btn{
-        background-color: #562EFF;
-        color: white;
-        width: 120px;
-        border: none;
-        font-size: 15px;
-        border-radius: 7px;
-    }
-    .search-btn{
-        background-color: #562EFF;
-        color: white;
-    }
-    .profile{
-        background-color: white;
-        width: 104%;
-        margin: 40px 0;
-        padding: 10px;
-        border-radius: 10px;
-    }
-    .profile img{
+
+    .profile img {
         width: 40px;
         margin-right: 20px;
     }
+
     .main-container {
         width: 95%;
         margin: 0 auto;
     }
-    .teachers-back{
+
+    .teachers-back {
         margin-top: 132px;
     }
+
     .all-teachers {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .blogs {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .blog-elements {
         display: block;
         margin: 0 0 30px 10px;
     }
+
     .blog-elements img {
         width: 70%;
     }
+
     .course-back {
         margin-top: 21px;
     }
+
     .course-box {
         grid-template-columns: repeat(1, 1fr);
         width: 92%;
     }
+
     .course img {
         width: 95%;
     }
+
     .rating-clock {
         justify-content: space-between;
         width: 95%;
         gap: 30px;
     }
-    .foot-text{
+
+    .foot-text {
         width: 70%;
         margin: 0 auto;
     }
-    .lg-scr{
+
+    .lg-scr {
         display: none;
     }
 }
@@ -320,80 +373,70 @@ footer{
 
 /* Tab Devices Responsive */
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    .nav-alt{
+    .nav-alt {
         display: block;
     }
-    .nav>button{
-        background-color: white;
-    }
-    .nav-back a{
+
+    .nav-back a {
         color: black;
     }
-    .logo img{
-        margin-left: 10px;
-    }
-    .offcanvas-body{
-        background-color: #AEAEAE;
-    }
-    .search-btn{
-        background-color: #562EFF;
-        color: white;
-        width: 120px;
-        border: none;
-        font-size: 15px;
-        border-radius: 7px;
-    }
-    .profile{
-        background-color: white;
-        width: 104%;
-        border-radius: 10px;
-        margin: 40px 0;
-        padding: 10px;
-    }
-    .profile a{
+
+    .profile a {
         font-size: 18px;
     }
-    .profile img{
+
+    .profile img {
         width: 40px;
         margin-right: 20px;
     }
+
     .main-container {
         width: 95%;
         margin: 0 auto;
     }
-    .teachers-back{
+
+    .teachers-back {
         margin-top: 140px;
     }
+
     .all-teachers {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 50px;
     }
+
     .blogs {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .blog-elements {
         display: block;
         margin: 0 0 30px 0px;
     }
+
     .blog-elements img {
         width: 70%;
     }
+
     .course-back {
         margin-top: 21px;
     }
+
     .course-box {
         grid-template-columns: repeat(2, 1fr);
         width: 92%;
     }
+
     .course img {
         width: 100%;
     }
+
     .rating-clock {
         justify-content: space-between;
         width: 95%;
         gap: 30px;
     }
-    .lg-scr{
+
+    .lg-scr {
         display: none;
     }
 }
